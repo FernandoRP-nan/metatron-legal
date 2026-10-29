@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidad de Metatrón</title>
+  <meta name="description" content="Política de Privacidad de la app Android Metatrón (com.nanrroti.metatron)." />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Política de Privacidad de Metatrón</h1>
+      <p class="meta">
+        App: Metatrón · Package: com.nanrroti.metatron<br />
+        Responsable: Nancrow<br />
+        Contacto: <a href="mailto:fernando.rdz.prianti@gmail.com">fernando.rdz.prianti@gmail.com</a><br />
+        Fecha de esta versión: 29 de octubre de 2026
+      </p>
+    </header>
+
+    <p><a href="../">← Volver</a></p>
+
+    <article>
+      <h2>1. Principio local-first</h2>
+      <p>
+        Metatrón está pensada para guardar tus datos principalmente en tu dispositivo Android.
+        No necesitas una cuenta Metatrón. No hay un servidor central obligatorio de Nancrow para
+        usar notas, tareas, eventos, diario, hilos, hashtags ni hábitos.
+      </p>
+
+      <h2>2. Datos que se almacenan en el dispositivo</h2>
+      <p>Según lo que escribas o configures, la app puede guardar localmente:</p>
+      <ul>
+        <li>Notas, tareas, eventos, diario e hilos (títulos, textos, fechas, estados).</li>
+        <li>Hashtags y etiquetas que uses en el contenido.</li>
+        <li>Hábitos, frecuencia, recordatorios, completions, historial y comentarios asociados.</li>
+        <li>Borradores, preferencias de apariencia, onboarding, fondos personalizados.</li>
+        <li>Adjuntos: fotografías, vídeos y grabaciones de voz/audio que añadas.</li>
+        <li>Otras configuraciones necesarias para el funcionamiento (tema, programas instalados, etc.).</li>
+      </ul>
+      <p>
+        Los campos de texto libre pueden contener información personal que tú decides introducir.
+        Metatrón no revisa ni clasifica automáticamente ese contenido.
+      </p>
+
+      <h2>3. Cámara, micrófono y archivos multimedia</h2>
+      <ul>
+        <li><strong>Cámara:</strong> para tomar imágenes que quieras adjuntar a tus notas u otros registros.</li>
+        <li><strong>Micrófono:</strong> para notas o grabaciones de voz que tú inicies.</li>
+        <li><strong>Selector de medios / permisos de lectura de medios:</strong> para elegir fotos, vídeos o audio ya existentes en el dispositivo.</li>
+      </ul>
+      <p>
+        Estos accesos se usan cuando tú interactúas con esas funciones. No afirmamos un acceso continuo
+        en segundo plano a cámara o micrófono. El procesamiento de adjuntos es principalmente local.
+      </p>
+
+      <h2>4. Hábitos</h2>
+      <p>
+        Si usas hábitos, se guardan en el dispositivo datos como título, frecuencia, recordatorios,
+        completions e historial. Metatrón no trata esos datos como «datos médicos» ni como historia clínica.
+      </p>
+
+      <h2>5. Notificaciones</h2>
+      <p>
+        Puedes recibir recordatorios locales (por ejemplo, de hábitos) o avisos del servidor web local
+        cuando está activo. No usamos notificaciones para publicidad ni para seguimiento publicitario.
+      </p>
+
+      <h2>6. Servidor web local (LAN)</h2>
+      <p>
+        Puedes activar, de forma opcional, un servidor web en tu teléfono para administrar tus datos
+        desde otro dispositivo en la misma red local (por ejemplo, un PC en el mismo Wi‑Fi).
+      </p>
+      <ul>
+        <li>Es una función opt-in: solo funciona si la activas.</li>
+        <li>El teléfono actúa como servidor; no se envían tus notas a un servidor central de Nancrow.</li>
+        <li>El acceso está protegido con un token que puedes rotar.</li>
+        <li>Las conexiones se cifran mediante HTTPS/TLS. El certificado es generado en tu instalación (autofirmado); el navegador puede pedirte confirmarlo. En la app puedes ver la huella SHA-256 para compararla.</li>
+        <li>El token autentica; HTTPS protege el transporte. Son mecanismos distintos.</li>
+        <li>Los datos se envían únicamente al cliente de tu red que se conecte con el token correcto.</li>
+      </ul>
+      <p>
+        No uses el servidor LAN en redes públicas o no confiables. Quien esté en tu red y conozca
+        la URL, acepte el certificado y obtenga el token podría acceder a tus datos locales.
+      </p>
+
+      <h2>7. Compartir y exportar</h2>
+      <ul>
+        <li>Al compartir con el sistema Android, el contenido va a la app que tú elijas; el tratamiento posterior depende de esa app.</li>
+        <li>Las copias de seguridad manuales o programadas que generes (por ejemplo ZIP) pueden incluir base de datos, preferencias y adjuntos. Quedan donde tú las guardes (almacenamiento del dispositivo, carpeta elegida, etc.).</li>
+      </ul>
+
+      <h2>8. Copia de seguridad de Android</h2>
+      <p>
+        La app permite el respaldo del sistema Android (<code>allowBackup</code>). Según la configuración
+        de tu dispositivo y cuenta Google, Android puede respaldar parte de los datos de la app.
+        Excluimos de ese respaldo automático secretos cifrados y el material privado TLS del servidor LAN.
+        Las copias ZIP que tú exportas desde Metatrón no se ven afectadas por esas exclusiones.
+      </p>
+
+      <h2>9. Servicios externos y lo que no usamos</h2>
+      <p>
+        En la versión pública (perfil de tienda) no integramos publicidad ni analítica de terceros.
+        En concreto, no están presentes Firebase Analytics, Google Analytics, Firebase Crashlytics,
+        anuncios, AppsFlyer, Adjust, Sentry ni Advertising ID con fines de seguimiento.
+      </p>
+      <p>
+        En el código de desarrollo existen módulos experimentales (por ejemplo Google Calendar/OAuth,
+        búsqueda de personajes, sync remoto o conectores HTTP) que <strong>no están disponibles</strong>
+        en la superficie pública de Google Play. No forman parte del producto que el usuario de tienda puede activar.
+      </p>
+
+      <h2>10. Datos y permisos que no usamos en la versión pública</h2>
+      <p>
+        La versión auditada para tienda no utiliza ubicación, agenda de contactos del dispositivo
+        (permiso persistente), permisos de calendario de Android, Bluetooth, Nearby ni Advertising ID
+        para tracking.
+      </p>
+
+      <h2>11. Seguridad</h2>
+      <p>
+        Los datos viven en el sandbox de Android. Usamos almacenamiento local y, para ciertos secretos
+        (por ejemplo tokens), almacenamiento cifrado cuando aplica. El servidor LAN usa HTTPS/TLS y token.
+        Ninguna medida es absoluta: protege tu dispositivo, tu red y tus exportaciones.
+      </p>
+
+      <h2>12. Retención</h2>
+      <p>
+        Los datos permanecen en el dispositivo mientras existan en la app, no los elimines,
+        no borres el almacenamiento de la app / no desinstales, o mientras existan copias externas
+        que hayas creado. Si la app ofrece papelera o archivado, esos elementos siguen en el dispositivo
+        hasta que los borres definitivamente o limpies datos.
+      </p>
+
+      <h2>13. Eliminación</h2>
+      <p>No hay una cuenta Metatrón en la nube que borrar. Puedes:</p>
+      <ul>
+        <li>Eliminar o vaciar contenido desde la propia app.</li>
+        <li>Borrar el almacenamiento de la app en Ajustes de Android.</li>
+        <li>Desinstalar la aplicación.</li>
+        <li>Eliminar backups o exportaciones desde la ubicación donde las guardaste.</li>
+      </ul>
+      <p>
+        Para preguntas: <a href="mailto:fernando.rdz.prianti@gmail.com">fernando.rdz.prianti@gmail.com</a>.
+      </p>
+
+      <h2>14. Menores</h2>
+      <p>
+        Metatrón es una app general de productividad. No está diseñada específicamente para recopilar
+        datos de menores. No usamos publicidad ni perfilado infantil.
+      </p>
+
+      <h2>15. Cambios</h2>
+      <p>
+        Esta política puede actualizarse. Publicaremos la versión vigente en esta misma dirección web.
+        La fecha al inicio indica la versión actual del documento.
+      </p>
+
+      <h2>16. Contacto</h2>
+      <p>
+        Nancrow<br />
+        <a href="mailto:fernando.rdz.prianti@gmail.com">fernando.rdz.prianti@gmail.com</a>
+      </p>
+    </article>
+
+    <footer>
+      <p>Metatrón · com.nanrroti.metatron · Documento estático sin cookies ni analítica.</p>
+    </footer>
+  </main>
+</body>
+</html>
